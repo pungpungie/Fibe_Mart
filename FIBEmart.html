@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Website Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      height: 112px;
+      width: 1300px;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 44px 46px;
+      text-decoration: none;
+      text-indent: 20px;
+    }
+    
+    li a:hover {
+      background-color: #793030;
+      height: 112px;
+      width: 188px;
+    }
+    body {
+  margin: 0;
+}
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  height: 120px;
+  width: 1240px;
+  background-image: url("FIBE HEADER.JPG");
+
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+div.gallery {
+  margin: 35px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 130px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+body {
+  background-color: black;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+<nav>
+<ul>
+  <li><a class="active" href="#home">CONTACT</a></li>
+  <li><a href="#news">TENTANG KAMI</a></li>
+  <li><a href="#contact">PRODUK</a></li>
+  <li><a href="#about">HOME</a></li>
+</ul>
+<div class="header">
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Product</h2>
+    <p>Welcome to FIBE Mart</p>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="WingsFood.jpg">
+      <img src="WingsFood.jpg" alt="WingsFood" width="800" height="600">
+    </a>
+    <div class="desc">Wingsfood</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="Indofood.jpg">
+      <img src="Indofood.jpg" alt="Indofood" width="600" height="400">
+    </a>
+    <div class="desc">Indofood</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="pt mayora.png">
+      <img src="pt mayora.png" alt="Mayora" width="600" height="400">
+    </a>
+    <div class="desc">Mayora</div>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="Diamond Food.jpg">
+      <img src="Diamond Food.jpg" alt="diamond food" width="600" height="400">
+    </a>
+    <div class="desc">Diamond Food</div>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="garuda food.png">
+      <img src="garuda food.png" alt="garuda food" width="600" height="400">
+    </a>
+    <div class="desc">GarudaFood</div>
+  </div>
+</div>
+</body>
+</html>
+
+
