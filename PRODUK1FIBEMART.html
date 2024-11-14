@@ -34,6 +34,11 @@
             color: orange;
             border-bottom: 2px solid orange;
         }
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
         .container {
             display: flex;
             justify-content: center;
@@ -41,7 +46,7 @@
         }
         .products {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
         }
         .product {
@@ -49,6 +54,9 @@
             color: black;
             text-align: center;
             padding: 10px;
+            width: 300px;
+            height: auto;
+            margin: 40px ;
         }
         .product img {
             width: 100%;
@@ -67,13 +75,6 @@
             display: inline-block;
             margin-top: 10px;
         }
-        .sidebar {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            font-size: 24px;
-            padding: 20px;
-            color: white;
-        }
   </style>
  </head>
  <body>
@@ -91,6 +92,9 @@
     </a>
    </nav>
   </div>
+   <div class="Header">
+    ALL SIZES AND COLORS
+   </div>
   <div class="container">
    <div class="products">
     <div class="product">
@@ -189,9 +193,6 @@
       Beli
      </a>
     </div>
-   </div>
-   <div class="sidebar">
-    ALL SIZES AND COLORS
    </div>
   </div>
  </body>
