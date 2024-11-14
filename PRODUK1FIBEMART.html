@@ -5,39 +5,41 @@
   </title>
   <style>
    body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
         }
         .header {
             display: flex;
             align-items: center;
-            padding: 10px;
-            background-color: black;
+            padding: 10px 20px;
+            background-color: #000;
         }
         .header img {
             height: 50px;
         }
-        .header nav {
+        .header .title {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .title span {
+            color: #fff;
+        }
+        .nav {
             margin-left: auto;
             display: flex;
             gap: 20px;
         }
-        .header nav a {
+        .nav a {
             color: #fff;
             text-decoration: none;
             font-size: 18px;
         }
-        .header nav a.active {
+        .nav a.active {
             color: orange;
             border-bottom: 2px solid orange;
-        }
-        .header {
-            background-color: #000000;
-            padding: 20px;
-            text-align: center;
         }
         .container {
             display: flex;
@@ -62,7 +64,7 @@
             width: 100%;
             height: auto;
         }
-        .product .price {
+        .product .descripsi {
             background-color: yellow;
             padding: 5px;
             margin-top: 10px;
@@ -79,67 +81,73 @@
  </head>
  <body>
   <div class="header">
-   <img alt="Logo" height="50" src="https://storage.googleapis.com/a1aa/image/2CaLPnNaRmqfWCpQh3rIPEkDCS4F6DJsvQUiD17EcJdrhP4JA.jpg" width="50"/>
-   <nav>
+   <img alt="FIBE MART LOGO" height="40" src="FIBE MART LOGO.jpg" width="50"/>
+   <div class="title">
+    <span>
+     FIBE
+    </span>
+    MART
+   </div>
+   <div class="nav">
     <a href="HOMEFIBEMART.html">
      HOME
     </a>
     <a class="active" href="PRODUK1FIBEMART.html">
      PRODUK
     </a>
-    <a href="TENTANGKAMIFIBEMART.html">
+    <a  href="TENTANGKAMIFIBEMART.html">
      TENTANG KAMI
     </a>
-   </nav>
+   </div>
   </div>
    <div class="Header">
-    ALL SIZES AND COLORS
+    KEBUTUHAN POKOK & DAPUR
    </div>
   <div class="container">
    <div class="products">
     <div class="product">
-     <img alt="Red helmet" height="200" src="https://storage.googleapis.com/a1aa/image/C9J53AULA0LwPpn7MMLjSYE0UUeq5RaNKSBtT0BLXsqrhP4JA.jpg" width="200"/>
+     <img alt="Bahan Pokok" height="200" src="BAHAN POKOK.jpg" width="200"/>
      <div>
-      HELM INK CX
+      ANEKA BAHAN POKOK
      </div>
-     <div class="price">
-      Rp 348.000
+     <div class="descripsi">
+      beras,gula,garam,minyak
      </div>
      <a class="buy-button" href="#">
       Beli
      </a>
     </div>
     <div class="product">
-     <img alt="Black and orange helmet" height="200" src="https://storage.googleapis.com/a1aa/image/zeQpQFmjh336ZiJLpLaDuXYyuT78yed9eczVzNBhjaKxGeBPB.jpg" width="200"/>
+     <img alt="Susu" height="200" src="SUSU.jpg" width="200"/>
      <div>
-      HELM INK DBH1
+      ANEKA SUSU
      </div>
-     <div class="price">
-      Rp 425.000
+     <div class="descripsi">
+      keju,krim,susu bubuk,susu cair
      </div>
      <a class="buy-button" href="#">
       Beli
      </a>
     </div>
     <div class="product">
-     <img alt="Black and green helmet" height="200" src="https://storage.googleapis.com/a1aa/image/td2VNNueRuQDViSiPmjmLTAG7ALM6vSRhkgyap8mSzMthP4JA.jpg" width="200"/>
+     <img alt="Makanan Instan" height="200" src="MAKANAN INSTAN.jpg" width="200"/>
      <div>
-      HELM INK METRO
+      ANEKA MAKANAN INSTAN
      </div>
-     <div class="price">
-      Rp 460.000
+     <div class="descripsi">
+      bubur instan,pasta,bubur instan
      </div>
      <a class="buy-button" href="#">
       Beli
      </a>
     </div>
     <div class="product">
-     <img alt="Black helmet" height="200" src="https://storage.googleapis.com/a1aa/image/YA07mDbN6SKqHJmfpL7RMbuAEYruIzCC3MveZy9s7DvZDfgnA.jpg" width="200"/>
+     <img alt="Roti" height="200" src="ROTI.webp" width="200"/>
      <div>
-      HELM INK METALICO
+      ROTI
      </div>
-     <div class="price">
-      Rp 550.000
+     <div class="descripsi">
+      aneka roti
      </div>
      <a class="buy-button" href="#">
       Beli
@@ -150,7 +158,7 @@
      <div>
       HELM INK SR
      </div>
-     <div class="price">
+     <div class="descripsi">
       Rp 470.000
      </div>
      <a class="buy-button" href="#">
@@ -162,38 +170,12 @@
      <div>
       HELM INK CENTRO
      </div>
-     <div class="price">
+     <div class="descripsi">
       Rp 400.000
      </div>
      <a class="buy-button" href="#">
       Beli
      </a>
     </div>
-    <div class="product">
-     <img alt="Black helmet" height="200" src="https://storage.googleapis.com/a1aa/image/YA07mDbN6SKqHJmfpL7RMbuAEYruIzCC3MveZy9s7DvZDfgnA.jpg" width="200"/>
-     <div>
-      HELM INK AM
-     </div>
-     <div class="price">
-      Rp 1.100.000
-     </div>
-     <a class="buy-button" href="#">
-      Beli
-     </a>
-    </div>
-    <div class="product">
-     <img alt="White helmet" height="200" src="https://storage.googleapis.com/a1aa/image/5eqkUU2oevj1SU6HcD4eibmxnOI6uMV5Uwd2qEg759r4GeBPB.jpg" width="200"/>
-     <div>
-      HELM INK TROOPER
-     </div>
-     <div class="price">
-      Rp 650.000
-     </div>
-     <a class="buy-button" href="#">
-      Beli
-     </a>
-    </div>
-   </div>
-  </div>
  </body>
 </html>
