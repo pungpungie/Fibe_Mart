@@ -1,0 +1,186 @@
+<html>
+ <head>
+  <title>
+   PRODUCT1
+  </title>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header .title {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .title span {
+            color: #fff;
+        }
+        .nav {
+            margin-left: auto;
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a.active {
+            color: orange;
+            border-bottom: 2px solid orange;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            width: 300px;
+            height: auto;
+            margin: 40px ;
+            border-radius: 15px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product .buy-button {
+            background-color: orange;
+            color: black;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+        .sidebar {
+            writing-mode: horizontal-tb;
+            text-orientation: mixed;
+            font-size: 24px;
+            padding: 20px;
+            color: black;
+            overflow: hidden;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: white
+        }
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to right, orange, yellow);
+        color: white;
+        text-align: center;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="FIBE MART LOGO" height="40" src="FIBE MART LOGO.jpg" width="50"/>
+   <div class="title">
+    <span>
+     FIBE
+    </span>
+    MART
+   </div>
+   <div class="nav">
+    <a href="HOMEFIBEMART.html">
+     HOME
+    </a>
+    <a class="active" href="PRODUK1FIBEMART.html">
+     PRODUK
+    </a>
+    <a  href="TENTANGKAMIFIBEMART.html">
+     TENTANG KAMI
+    </a>
+   </div>
+  </div>
+  <div class="sidebar">
+    <span>ROTI</span>
+    </div>
+  <div class="container">
+   <div class="products">
+    <div class="product">
+     <img alt="Bahan Pokok" height="200" src="#" width="200"/>
+     <div>
+      Minyak
+     </div>
+     <a class="buy-button" href="#">
+      Beli Sekarang
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Susu" height="200" src="#" width="200"/>
+     <div>
+      Gula
+     </div>
+     <a class="buy-button" href="#">
+        Beli Sekarang
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Makanan Instan" height="200" src="#" width="200"/>
+     <div>
+      Teh
+     </div>
+     <a class="buy-button" href="#">
+        Beli Sekarang
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Roti" height="200" src="#" width="200"/>
+     <div>
+      Garam
+     </div>
+     <a class="buy-button" href="#">
+        Beli Sekarang
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Buah & Sayuran" height="200" src="#" width="200"/>
+     <div>
+      Buah & Sayuran
+     </div>
+     <a class="buy-button" href="#">
+        Beli Sekarang
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Daging & Hasil Laut" height="200" src="#" width="200"/>
+     <div>
+      Daging & Hasil Laut
+     </div>
+     <a class="buy-button" href="#">
+        Beli Sekarang
+     </a>
+    <div class="footer">
+        <p>Footer</p>
+    </div>      
+    </div>
+ </body>
+</html>
