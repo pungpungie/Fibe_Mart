@@ -63,26 +63,89 @@
             max-width: 100%;
             height: auto;
         }
-        .footer {
+        footer{
+            background: #343434;
+            padding-top: 50px;
+        }
+        .container{
+            width: 1140px;
+            margin: auto;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #000;
+            justify-content: center;
         }
-        .footer .text {
-            text-align: left;
+        .footer-content{
+            width: 33.3%;
         }
-        .footer .text p {
-            margin: 5px 0;
+        h3{
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
         }
-        .footer .social image {
-            margin-top: 10px;
+        .footer-content p{
+            width:190px;
+            margin: auto;
+            padding: 7px;
         }
-        .footer .social image a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 24px;
+        .footer-content ul{
+            text-align: center;
+        }
+        .list{
+            padding: 0;
+        }
+        .list li{
+            width: auto;
+            text-align: center;
+            list-style-type:none;
+            padding: 7px;
+            position: relative;
+        }
+        .list li::before{
+            content: '';
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background: #f18930;
+            transition-duration: .5s;
+        }   
+        .list li:hover::before{
+            width: 70px;
+        }
+        .social-icons{
+            text-align: center;
+            padding: 0;
+        }
+        .social-icons li{
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+        }
+        .social-icons i{
+            color: white;
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: #f18930;
+        }
+        .social-icons i:hover{
+            color: #f18930;
+        }
+        .bottom-bar{
+            background: #f18930;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+        .bottom-bar p{
+            color: #343434;
+            margin: 0;
+            font-size: 16px;
+            padding: 7px;
         }
     </style>
  </head>
@@ -127,32 +190,39 @@
     <img alt="GAMBAR" height="370" src="RAKMAKANAN.jpg" width="420"/>
    </div>
   </div>
-  <div class="footer">
-   <div class="contact">
-    <p>
-     LOKASI :Jl. Ahmad Yani No 45, Purwokerto, Banyumas, Jawa Tengah
-    </p>
-    <p>
-     NOMER TELEPON : +62895322115324
-    </p>
-    <p>
-     EMAIL : Fibe.Mart@gmail.com
-    </p>
-   </div>
-   <div class="social">
-    <a href="LOGOINSTAGRAM.jpg" target="_blank">
-     <i class="fab fa-instagram">
-     </i>
-    </a>
-    <a href="https://www.facebook.com/infobim_official" target="_blank">
-     <i class="fab fa-facebook">
-     </i>
-    </a>
-    <a href="https://www.twitter.com/bimhelm1129" target="_blank">
-     <i class="fab fa-twitter">
-     </i>
-    </a>
-   </div>
+  <div class="container">
+    <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Email:Fibe.Mart@gmail.com</p>
+        <p>Phone:+62895322115324</p>
+        <p>Address:Jl. Ahmad Yani No 45, Purwokerto, Banyumas, Jawa Tengah</p>
+    </div>
+    <div class="footer-content">
+        <h3>Quick Links</h3>
+         <ul class="list">
+            <li><a href="HOMEFIBEMART.html">Home</a></li>
+            <li><a href="PRODUK1FIBEMART.html">Products</a></li>
+            <li><a href="TENTANGKAMIFIBEMART.html">Tentang Kami</a></li>
+         </ul>
+    </div>
+    <div class="footer-content">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+            <a href="https://www.instagram.com/fibe.mart?igsh=b3E2cWlpMWw5OXc3">
+            <img alt="Instagram" height="50" src="IG.JPG" width="50"/>
+            </a>
+            <a href="#">
+            <img alt="Facebook" height="50" src="FB.JPG" width="50"/> 
+            </a>
+            <a href="#">
+            <img alt="Twitter" height="50" src="X.JPG" width="50"/> 
+            </a>
+        </ul>
+        </div>
+</div>
+<div class="bottom-bar">
+    <p>&copy; FIBE MART . TELKOM SCHOOL</p>
+</div>
   </div>
  </body>
 </html>
