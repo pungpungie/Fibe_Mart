@@ -9,3 +9,15 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         document.getElementById('message').textContent = 'Invalid username or password.';
     }
 });
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
