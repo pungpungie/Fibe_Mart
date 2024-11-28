@@ -1,8 +1,5 @@
-html{
-    height: 100%;
-  }
-body{
- font-family: Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
@@ -13,7 +10,7 @@ body{
 
 .login-container {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -42,15 +39,15 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #f5be0a;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: orange;
 }
 
 #message {
@@ -58,3 +55,12 @@ button:hover {
     color: red;
     margin-top: 10px;
 }
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+  }
